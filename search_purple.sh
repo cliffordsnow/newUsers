@@ -1,19 +1,25 @@
 #!/bin/bash
 
-cd /home/clifford/.purple/logs/irc/glassman@irc.oftc.net/\#osm-bot.chat
+# modify the next four lines for your system
+EMAIL="your@email.com"
+PIDGIN_HOME="/home/user/.purple/logs/irc/irc_account@irc.oftc.net/\#osm-bot.chat"
+AREA="Washington, United State"
+SCRIPT_HOME="/home/user/bin"
+
+cd $PIDGIN_HOME
 CURRENT=`(ls -t | head -1)`
 
-grep "Washington, United State" $CURRENT|grep "just started editing" >> /tmp/found.txt
+grep $AREA $CURRENT|grep "just started editing" >> /tmp/found.txt
 
 while read line
 do
 	USR=`echo $line |sed -e '/.*osmbot.test. /s///' -e '/ just started.*/s///' -e 's/[\/&]/\\&/g'`
 	USER=`echo "$USR" | sed -e 's/[\$\^\&]/\\\&/g'`
 	
-	if ! grep -q "$USER" /home/clifford/bin/newuser/newuser.txt
+	if ! grep -q "$USER" $SCRIPT_HOME/newuser/newuser.txt
 	then
 		CHANGESET=`echo $line | sed -e '/.*changeset /s///'`
-		echo "$USR" >> /home/clifford/bin/newuser/newuser.txt
+		echo "$USR" >> $SCRIPT_HOME/newuser/newuser.txt
 		MUSR=`echo "$USER" | sed -e 's/ /%20/g' -e 's;^;http://openstreetmap.org/message/new/;'`
 		echo -e "$MUSR" '\t' $CHANGESET >> /tmp/both.txt
 	fi
@@ -21,7 +27,7 @@ done </tmp/found.txt
 
 
 if test -e /tmp/both.txt; then
-	mailx -s "New User" clifford@snowandsnow.us </tmp/both.txt
+	mailx -s "New User" $EMAIL </tmp/both.txt
 	rm /tmp/both.txt
 fi
 
@@ -31,7 +37,7 @@ fi
 
 # NOTES Section
 
-grep "Washington, United State" $CURRENT|grep "posted a new note near" >> /tmp/found2.txt
+grep $AREA $CURRENT|grep "posted a new note near" >> /tmp/found2.txt
 
 while read line
 do
@@ -39,16 +45,16 @@ do
 	CHANGESET=`echo $line|sed -e '/.*new note near .*http/s//http/' -e '/ \(.*\)/s///'`
 	NOTE=`echo $line|sed -e 's/^.*(\"//' -e 's/..$//'`
 
-	if ! grep -q "$CHANGESET" /home/clifford/bin/purple/changeset.txt
+	if ! grep -q "$CHANGESET" $SCRIPT_HOME/purple/changeset.txt
 	then
-		echo "$CHANGESET" >> /home/clifford/bin/purple/changeset.txt
+		echo "$CHANGESET" >> $SCRIPT_HOME/purple/changeset.txt
 		echo -e "$USR" '\t' $CHANGESET '\t' $NOTE >> /tmp/notes.txt
 	fi
 done </tmp/found2.txt
 
 
 if test -e /tmp/notes.txt; then
-	mailx -s "New Note" clifford@snowandsnow.us </tmp/notes.txt
+	mailx -s "New Note" $SCRIPT_HOME </tmp/notes.txt
 	rm /tmp/notes.txt
 #	cat /tmp/notes.txt
 fi
