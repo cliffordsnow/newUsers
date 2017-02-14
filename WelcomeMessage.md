@@ -5,6 +5,7 @@ If you have any questions at all, we can help out: you think you might have brok
 Here’s some useful things to get you started:
 
 * A lot of information about mapping is available on our [wiki-pages](http://wiki.openstreetmap.org/). If you don’t find how to map something within the editor of your choice, the quickest solution is look at [Map Features](https://wiki.openstreetmap.org/wiki/Map_Features) on the wiki. For more complicated questions you can search in or post on the [Help-site](http://help.openstreetmap.org) or ask [the forum](http://forum.openstreetmap.org/viewforum.php?id=20).
+* [learnOSM](http://learnosm.org) is a good place to learn more about OSM. Instructions are available for using the iD browser editor and the more advanced JOSM editor. 
 * Pokemon Go players might be interested in these [tips](https://blog.openstreetmap.org/2016/12/30/tips-pokemon-go/)
 * If you want to keep up to date on the going-ons in the United States community, follow [@OpenStreetMapUS](http://twitter.com/OpenStreetMapUS) on Twitter or the [Facebook Group](https://www.facebook.com/groups/osm.us/)
 * Join one of the many [Meetup groups.](openstreetmap.meetup.com)
