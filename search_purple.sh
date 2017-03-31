@@ -41,13 +41,13 @@ grep $AREA $CURRENT|grep "posted a new note near" >> /tmp/found2.txt
 
 while read line
 do
-	USR=`echo $line |sed -e '/.*osmbot.test. /s///' -e '/ posted a new note.*/s///' -e 's/[\/&]/\\&/g'`
-	CHANGESET=`echo $line|sed -e '/.*new note near .*http/s//http/' -e '/ \(.*\)/s///'`
-	NOTE=`echo $line|sed -e 's/^.*(\"//' -e 's/..$//'`
+	USR=`echo $line |sed -e '/.*osmbot.test: /s///' -e '/ posted a new note.*/s///' -e 's/[\/&]/\\&/g'`
+	NOTEID=`echo $line|sed -e '/.*new note near .*http/s//https/' -e '/ \(.*\)/s///'`
+	NOTE=`echo $line|sed -r 's;^.*(https://osm.org/note/[0-9]+) .\"(.*)\".*;\2;'`
 
 	if ! grep -q "$CHANGESET" $SCRIPT_HOME/purple/changeset.txt
 	then
-		echo "$CHANGESET" >> $SCRIPT_HOME/purple/changeset.txt
+		echo "$NOTEID" >> $SCRIPT_HOME/purple/changeset.txt
 		echo -e "$USR" '\t' $CHANGESET '\t' $NOTE >> /tmp/notes.txt
 	fi
 done </tmp/found2.txt
