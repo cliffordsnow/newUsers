@@ -8,9 +8,9 @@ user_repo = 'newUsers'
 try:
    t = open(token_file,"r")
 except IOError:
-    print("Error: Token File missing")
-    return 0
-  
+   print("Error: Token File missing")
+   return 0
+
 token = str(t.read())[:-1]
 
 g = Github(token)
