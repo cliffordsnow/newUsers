@@ -5,7 +5,12 @@ token_file = "/home/clifford/.gissues/token.txt"
 user = 'cliffordsnow'
 user_repo = 'newUsers'
 
-t = open(token_file,"r")
+try:
+   t = open(token_file,"r")
+except IOError:
+    print("Error: Token File missing")
+    return 0
+  
 token = str(t.read())[:-1]
 
 g = Github(token)
