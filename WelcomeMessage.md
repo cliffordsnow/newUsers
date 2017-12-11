@@ -10,7 +10,7 @@ Here’s some useful things to get you started:
 * If you want to keep up to date on the going-ons in the United States community, follow [@OpenStreetMapUS](http://twitter.com/OpenStreetMapUS) on Twitter or the [Facebook Group](https://www.facebook.com/groups/osm.us/)
 * Join one of the many [Meetup groups.](openstreetmap.meetup.com)
 * If you are in the the King County area join the [OpenStreetMap Seattle](http://www.meetup.com/OpenStreetMap-Seattle/) Meetup Group
-* or if you live north of Seattle join the [North Puget Sound](http://www.meetup.com/OpenStreetMap-North-Puget-Sound) Meetup Group
+* or if you live north of Seattle join the [Central Salish Sea](http://www.meetup.com/OpenStreetMap-Central-Salish-Sea) Meetup Group
 * or if you live in the Portland, Or area, join the [Portland OSM Meetup group](https://www.meetup.com/OpenStreetMap-Portland/)
 * Or subscribe to [the US mailing list](https://lists.openstreetmap.org/listinfo/talk-us). We even have a local mailing list for the [Puget Sound Area](https://lists.openstreetmap.org/listinfo/talk-us-pugetsound)
 * Want to see who’s mapping near you, or want to see how much you’ve been doing yourself, check out the maps at [resultmaps.neis-one.org](http://resultmaps.neis-one.org/).
