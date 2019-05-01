@@ -22,4 +22,4 @@ Here are some useful things to get you started:
 Happy Mapping!
 
 Clifford AKA Glassman <br>
-@osm_seattle
+@osm_washington
