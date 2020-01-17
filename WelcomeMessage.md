@@ -9,7 +9,7 @@ Here are some useful things to get you started:
 * [learnOSM](http://learnosm.org) is a good place to learn more about OSM. Instructions are available for using the iD browser editor and the more advanced JOSM editor. 
 * Pokemon Go players might be interested in these [tips](https://blog.openstreetmap.org/2016/12/30/tips-pokemon-go/)
 * If you want to keep up to date on the going-ons in the United States community, follow [@OpenStreetMapUS](http://twitter.com/OpenStreetMapUS) on Twitter or the [Facebook Group](https://www.facebook.com/groups/osm.us/)
-* Join one of the many [Meetup groups.](openstreetmap.meetup.com)
+* Join one of the many [Meetup groups.](https://openstreetmap.meetup.com)
 * If you are in the the King County area join the [OpenStreetMap Seattle](http://www.meetup.com/OpenStreetMap-Seattle/) Meetup Group
 * or if you live north of Seattle join the [Central Salish Sea](http://www.meetup.com/OpenStreetMap-Central-Salish-Sea) Meetup Group
 * or if you live in the Portland, Or area, join the [Portland OSM Meetup group](https://www.meetup.com/OpenStreetMap-Portland/)
