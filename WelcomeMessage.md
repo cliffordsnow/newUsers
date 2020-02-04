@@ -10,9 +10,7 @@ Here are some useful things to get you started:
 * Want to see who’s mapping near you, or want to see how much you’ve been doing yourself, check out the maps at [resultmaps.neis-one.org](http://resultmaps.neis-one.org/).
 * If you are a business owner and want to learn how to add OpenStreetMap to your website, check out the site [Switch2OSM](https://switch2osm.org/)
 
-So what should you map next? I highly recommend adding features around you. Restaurants, business, streets, sidewalks, benches, basically features that you know best. You are the expert. If you find a business already mapped, make sure there is an address. There is something satisfing about filling in the map around you. Or correcting a road when the local government makes changes to it. Do you have any special interests, like biking, hiking, or even trains? Did you know we have the best bike, hiking and train world wide networks of any site. But like everything else, they can always use improvements. 
-
-One of my favorite features to map is sidewalks. We are using OpenStreetMap to build a pedestrain network that can be used by anyone, but especially by those with limited mobility. 
+So what should you map next? I highly recommend adding features around you. Restaurants, business, streets, sidewalks, benches, basically features that you know best. You are the expert. If you find a business already mapped, make sure there is an address. There is something satisfying about filling in the map around you. Or correcting a road when the local government makes changes to it. Do you have any special interests, like biking, hiking, or even trains? Did you know we have the best bike, hiking and train world wide networks of any site. But like everything else, they can always use improvements. 
 
 
 Happy Mapping!
